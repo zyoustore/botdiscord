@@ -1,0 +1,8 @@
+local http = game:GetService("HttpService")
+local Data = {
+	["content"] = "Hey! This is a message sent from roblox!"
+}
+
+Data = http:JSONEncode(Data)
+
+http:PostAsync("", Data) --Put the link you saved between the two quotes.
